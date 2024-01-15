@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "github:build":"ng build --base-href ./",
+    "github:limpiar": "del /q docs",
+    "github:mover": "move .\\dist\\actividad20\\browser\\* .\\docs",
+    "github": "npm run github:build && npm run github:limpiar &&  npm run github:mover"
   },
   "private": true,
   "dependencies": {

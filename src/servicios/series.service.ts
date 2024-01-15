@@ -8,7 +8,7 @@ import { Programa } from '../app/interfaces/programa.interface';
   providedIn: 'root'
 })
 export class SeriesService {
-  private URL:string = 'http://api.tvmaze.com/';
+  private URL:string = 'https://api.tvmaze.com/';
   constructor(private http:HttpClient) { }
 
   getEpisodios():Observable<Episodio[]>{
