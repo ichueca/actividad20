@@ -1,0 +1,5 @@
+<div class="row">
+  @for (programa of programas; track $index) {
+    <app-programa class="col-3" [css]="'width:14rem'" [programa]="programa"></app-programa>
+  }
+</div>
